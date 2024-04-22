@@ -1,0 +1,33 @@
+{
+  "apps": [{
+    "name"     : "Proxy",
+    "script"   : "dist/proxy.js",
+    "watch"    : false,
+    "instances": 1,
+    "exec_mode": "fork"
+  }, {
+    "name"     : "Task",
+    "script"   : "dist/task.js",
+    "watch"    : false,
+    "instances": 2,
+    "exec_mode": "cluster"
+  }, {
+    "name"     : "httpTask",
+    "script"   : "dist/httpTask.js",
+    "watch"    : false,
+    "instances": 2,
+    "exec_mode": "cluster"
+  }, {
+    "name"     : "taskMonitor",
+    "script"   : "dist/taskMonitor.js",
+    "watch"    : false,
+    "instances": 1,
+    "exec_mode": "fork"
+  }, {
+    "name"     : "API",
+    "script"   : "dist/api.js",
+    "watch"    : false,
+    "instances": 1,
+    "exec_mode": "fork"
+  }]
+}

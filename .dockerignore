@@ -1,0 +1,10 @@
+.git
+.vscode
+node_modules
+npm-debug
+dist
+docs
+package-lock.json
+yarn.lock
+.machineId
+.DS_Store

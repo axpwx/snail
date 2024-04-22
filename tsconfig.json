@@ -1,0 +1,40 @@
+{
+  "compilerOptions": {
+    "strict": false,
+    "alwaysStrict": true,
+    "declaration": true,
+    "module": "CommonJS",
+    "downlevelIteration": true,
+    "moduleResolution": "node",
+    "noImplicitReturns": true,
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "noUnusedLocals": true,
+    "strictNullChecks": true,
+    "resolveJsonModule": true,
+    "noImplicitThis": true,
+    "noFallthroughCasesInSwitch": true,
+    "forceConsistentCasingInFileNames": true,
+    "esModuleInterop": true,
+    "sourceMap": true,
+    "outDir": "dist",
+    "lib": [
+      "dom",
+      "es6",
+      "es7",
+      "es2017",
+      "es2018",
+      "es2019",
+      "es2020",
+      "es2021"
+    ],
+    "target": "es2021"
+  },
+  "include": [
+    "src/**/*.ts",
+    "ecosystem.config.js"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

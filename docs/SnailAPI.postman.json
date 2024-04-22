@@ -1,0 +1,934 @@
+{
+  "info": {
+    "name": "SnailAPI",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "SSR",
+      "item": [
+        {
+          "name": "New",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "http://127.0.0.1:18080/ssr/new?url=https:%2F%2Fhttpbin.org%2Fanything&device=pc&viewport=900,600,2&hasLazy=true&extend=true&userAgent=Snail&callback=http:%2F%2F127.0.0.1%2Fcallback&referer=https:%2F%2Fwww.baidu.com&timeout=5000&direct=false",
+              "query": [
+                {
+                  "key": "url",
+                  "value": "https://httpbin.org/anything",
+                  "disabled": false,
+                  "description": null
+                },
+                {
+                  "key": "device",
+                  "value": "pc",
+                  "disabled": false,
+                  "description": null
+                },
+                {
+                  "key": "viewport",
+                  "value": "900,600,2",
+                  "disabled": false,
+                  "description": null
+                },
+                {
+                  "key": "hasLazy",
+                  "value": "true",
+                  "disabled": false,
+                  "description": null
+                },
+                {
+                  "key": "extend",
+                  "value": "true",
+                  "disabled": false,
+                  "description": null
+                },
+                {
+                  "key": "userAgent",
+                  "value": "Snail",
+                  "disabled": false,
+                  "description": null
+                },
+                {
+                  "key": "callback",
+                  "value": "http://127.0.0.1/callback",
+                  "disabled": false,
+                  "description": null
+                },
+                {
+                  "key": "referer",
+                  "value": "https://www.baidu.com",
+                  "disabled": false,
+                  "description": null
+                },
+                {
+                  "key": "timeout",
+                  "value": "5000",
+                  "disabled": false,
+                  "description": null
+                },
+                {
+                  "key": "direct",
+                  "value": "false",
+                  "disabled": false,
+                  "description": null
+                }
+              ],
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "18080",
+              "path": [
+                "ssr",
+                "new"
+              ]
+            },
+            "description": "创建渲染任务",
+            "header": [],
+            "body": null,
+            "auth": null
+          },
+          "protocolProfileBehavior": {
+            "followRedirects": false,
+            "followOriginalHttpMethod": false,
+            "followAuthorizationHeader": false
+          },
+          "response": []
+        },
+        {
+          "name": "GET",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "http://127.0.0.1:18080/ssr/get?taskId=f421abed-a43d-4b55-a66c-6d8993a4dffc",
+              "query": [
+                {
+                  "key": "taskId",
+                  "value": "f421abed-a43d-4b55-a66c-6d8993a4dffc",
+                  "disabled": false,
+                  "description": null
+                }
+              ],
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "18080",
+              "path": [
+                "ssr",
+                "get"
+              ]
+            },
+            "description": "查询任务结果",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "disabled": false,
+              "raw": ""
+            },
+            "auth": null
+          },
+          "protocolProfileBehavior": {
+            "followRedirects": false,
+            "followOriginalHttpMethod": false,
+            "followAuthorizationHeader": false
+          },
+          "response": []
+        },
+        {
+          "name": "Fetch",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "http://127.0.0.1:18080/ssr/fetch?url=https:%2F%2Fhttpbin.org%2Fanything",
+              "query": [
+                {
+                  "key": "url",
+                  "value": "https://httpbin.org/anything",
+                  "disabled": false,
+                  "description": null
+                }
+              ],
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "18080",
+              "path": [
+                "ssr",
+                "fetch"
+              ]
+            },
+            "description": "同步请求",
+            "header": [],
+            "body": null,
+            "auth": null
+          },
+          "protocolProfileBehavior": {
+            "followRedirects": false,
+            "followOriginalHttpMethod": false,
+            "followAuthorizationHeader": false
+          },
+          "response": []
+        }
+      ],
+      "protocolProfileBehavior": null,
+      "response": []
+    },
+    {
+      "name": "ScreenShot",
+      "item": [
+        {
+          "name": "New",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "http://127.0.0.1:18080/screenshot/new?url=https:%2F%2Fhttpbin.org%2Fanything",
+              "query": [
+                {
+                  "key": "url",
+                  "value": "https://httpbin.org/anything",
+                  "disabled": false,
+                  "description": null
+                }
+              ],
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "18080",
+              "path": [
+                "screenshot",
+                "new"
+              ]
+            },
+            "description": "",
+            "header": [],
+            "body": null,
+            "auth": null
+          },
+          "protocolProfileBehavior": {
+            "followRedirects": false,
+            "followOriginalHttpMethod": false,
+            "followAuthorizationHeader": false
+          },
+          "response": []
+        },
+        {
+          "name": "GET",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "http://127.0.0.1:18080/screenshot/get?taskId=92eb738a-5bf4-4b01-a83f-66bb728a084f",
+              "query": [
+                {
+                  "key": "taskId",
+                  "value": "92eb738a-5bf4-4b01-a83f-66bb728a084f",
+                  "disabled": false,
+                  "description": null
+                }
+              ],
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "18080",
+              "path": [
+                "screenshot",
+                "get"
+              ]
+            },
+            "description": "",
+            "header": [],
+            "body": null,
+            "auth": null
+          },
+          "protocolProfileBehavior": {
+            "followRedirects": false,
+            "followOriginalHttpMethod": false,
+            "followAuthorizationHeader": false
+          },
+          "response": []
+        },
+        {
+          "name": "Fetch",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "http://127.0.0.1:18080/screenshot/fetch?url=https:%2F%2Fhttpbin.org%2Fanything",
+              "query": [
+                {
+                  "key": "url",
+                  "value": "https://httpbin.org/anything",
+                  "disabled": false,
+                  "description": null
+                }
+              ],
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "18080",
+              "path": [
+                "screenshot",
+                "fetch"
+              ]
+            },
+            "description": "",
+            "header": [],
+            "body": null,
+            "auth": null
+          },
+          "protocolProfileBehavior": {
+            "followRedirects": false,
+            "followOriginalHttpMethod": false,
+            "followAuthorizationHeader": false
+          },
+          "response": []
+        }
+      ],
+      "protocolProfileBehavior": null,
+      "response": []
+    },
+    {
+      "name": "PDF",
+      "item": [
+        {
+          "name": "New",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "http://127.0.0.1:18080/pdf/new?url=https:%2F%2Fhttpbin.org%2Fanything",
+              "query": [
+                {
+                  "key": "url",
+                  "value": "https://httpbin.org/anything",
+                  "disabled": false,
+                  "description": null
+                }
+              ],
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "18080",
+              "path": [
+                "pdf",
+                "new"
+              ]
+            },
+            "description": "",
+            "header": [],
+            "body": null,
+            "auth": null
+          },
+          "protocolProfileBehavior": {
+            "followRedirects": false,
+            "followOriginalHttpMethod": false,
+            "followAuthorizationHeader": false
+          },
+          "response": []
+        },
+        {
+          "name": "GET",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "http://127.0.0.1:18080/pdf/get?taskId=576aa95a-7c8f-445d-972b-2ee3d75edd4d",
+              "query": [
+                {
+                  "key": "taskId",
+                  "value": "576aa95a-7c8f-445d-972b-2ee3d75edd4d",
+                  "disabled": false,
+                  "description": null
+                }
+              ],
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "18080",
+              "path": [
+                "pdf",
+                "get"
+              ]
+            },
+            "description": "",
+            "header": [],
+            "body": null,
+            "auth": null
+          },
+          "protocolProfileBehavior": {
+            "followRedirects": false,
+            "followOriginalHttpMethod": false,
+            "followAuthorizationHeader": false
+          },
+          "response": []
+        },
+        {
+          "name": "Fetch",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "http://127.0.0.1:18080/pdf/fetch?url=https:%2F%2Fhttpbin.org%2Fanything",
+              "query": [
+                {
+                  "key": "url",
+                  "value": "https://httpbin.org/anything",
+                  "disabled": false,
+                  "description": null
+                }
+              ],
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "18080",
+              "path": [
+                "pdf",
+                "fetch"
+              ]
+            },
+            "description": "",
+            "header": [],
+            "body": null,
+            "auth": null
+          },
+          "protocolProfileBehavior": {
+            "followRedirects": false,
+            "followOriginalHttpMethod": false,
+            "followAuthorizationHeader": false
+          },
+          "response": []
+        }
+      ],
+      "protocolProfileBehavior": null,
+      "response": []
+    },
+    {
+      "name": "resList",
+      "item": [
+        {
+          "name": "New",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "http://127.0.0.1:18080/reslist/new?url=https:%2F%2Fwww.baidu.com",
+              "query": [
+                {
+                  "key": "url",
+                  "value": "https://www.baidu.com",
+                  "disabled": false,
+                  "description": null
+                }
+              ],
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "18080",
+              "path": [
+                "reslist",
+                "new"
+              ]
+            },
+            "description": "",
+            "header": [],
+            "body": null,
+            "auth": null
+          },
+          "protocolProfileBehavior": {
+            "followRedirects": false,
+            "followOriginalHttpMethod": false,
+            "followAuthorizationHeader": false
+          },
+          "response": []
+        },
+        {
+          "name": "GET",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "http://127.0.0.1:18080/reslist/get?taskId=",
+              "query": [
+                {
+                  "key": "taskId",
+                  "value": "",
+                  "disabled": false,
+                  "description": null
+                }
+              ],
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "18080",
+              "path": [
+                "reslist",
+                "get"
+              ]
+            },
+            "description": "",
+            "header": [],
+            "body": null,
+            "auth": null
+          },
+          "protocolProfileBehavior": {
+            "followRedirects": false,
+            "followOriginalHttpMethod": false,
+            "followAuthorizationHeader": false
+          },
+          "response": []
+        },
+        {
+          "name": "Fetch",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "http://127.0.0.1:18080/reslist/fetch?url=https:%2F%2Fwww.baidu.com",
+              "query": [
+                {
+                  "key": "url",
+                  "value": "https://www.baidu.com",
+                  "disabled": false,
+                  "description": null
+                }
+              ],
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "18080",
+              "path": [
+                "reslist",
+                "fetch"
+              ]
+            },
+            "description": "",
+            "header": [],
+            "body": null,
+            "auth": null
+          },
+          "protocolProfileBehavior": {
+            "followRedirects": false,
+            "followOriginalHttpMethod": false,
+            "followAuthorizationHeader": false
+          },
+          "response": []
+        }
+      ],
+      "protocolProfileBehavior": null,
+      "response": []
+    },
+    {
+      "name": "Trace",
+      "item": [
+        {
+          "name": "New",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "http://127.0.0.1:18080/trace/new?url=https:%2F%2Fwww.baidu.com",
+              "query": [
+                {
+                  "key": "url",
+                  "value": "https://www.baidu.com",
+                  "disabled": false,
+                  "description": null
+                }
+              ],
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "18080",
+              "path": [
+                "trace",
+                "new"
+              ]
+            },
+            "description": "",
+            "header": [],
+            "body": null,
+            "auth": null
+          },
+          "protocolProfileBehavior": {
+            "followRedirects": false,
+            "followOriginalHttpMethod": false,
+            "followAuthorizationHeader": false
+          },
+          "response": []
+        },
+        {
+          "name": "GET",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "http://127.0.0.1:18080/trace/get?taskId=89adfcf3-5a6b-4ef5-ae00-b419d713020d",
+              "query": [
+                {
+                  "key": "taskId",
+                  "value": "89adfcf3-5a6b-4ef5-ae00-b419d713020d",
+                  "disabled": false,
+                  "description": null
+                }
+              ],
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "18080",
+              "path": [
+                "trace",
+                "get"
+              ]
+            },
+            "description": "",
+            "header": [],
+            "body": null,
+            "auth": null
+          },
+          "protocolProfileBehavior": {
+            "followRedirects": false,
+            "followOriginalHttpMethod": false,
+            "followAuthorizationHeader": false
+          },
+          "response": []
+        },
+        {
+          "name": "Fetch",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "http://127.0.0.1:18080/trace/fetch?url=https:%2F%2Fwww.baidu.com",
+              "query": [
+                {
+                  "key": "url",
+                  "value": "https://www.baidu.com",
+                  "disabled": false,
+                  "description": null
+                }
+              ],
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "18080",
+              "path": [
+                "trace",
+                "fetch"
+              ]
+            },
+            "description": "",
+            "header": [],
+            "body": null,
+            "auth": null
+          },
+          "protocolProfileBehavior": {
+            "followRedirects": false,
+            "followOriginalHttpMethod": false,
+            "followAuthorizationHeader": false
+          },
+          "response": []
+        }
+      ],
+      "protocolProfileBehavior": null,
+      "response": []
+    },
+    {
+      "name": "Coverage",
+      "item": [
+        {
+          "name": "New",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "http://127.0.0.1:18080/coverage/new?url=https:%2F%2Fwww.baidu.com",
+              "query": [
+                {
+                  "key": "url",
+                  "value": "https://www.baidu.com",
+                  "disabled": false,
+                  "description": null
+                }
+              ],
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "18080",
+              "path": [
+                "coverage",
+                "new"
+              ]
+            },
+            "description": "",
+            "header": [],
+            "body": null,
+            "auth": null
+          },
+          "protocolProfileBehavior": {
+            "followRedirects": false,
+            "followOriginalHttpMethod": false,
+            "followAuthorizationHeader": false
+          },
+          "response": []
+        },
+        {
+          "name": "GET",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "http://127.0.0.1:18080/coverage/get?taskId=68feb372-b5a0-4cfa-aeca-eccea1e1c04f",
+              "query": [
+                {
+                  "key": "taskId",
+                  "value": "68feb372-b5a0-4cfa-aeca-eccea1e1c04f",
+                  "disabled": false,
+                  "description": null
+                }
+              ],
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "18080",
+              "path": [
+                "coverage",
+                "get"
+              ]
+            },
+            "description": "",
+            "header": [],
+            "body": null,
+            "auth": null
+          },
+          "protocolProfileBehavior": {
+            "followRedirects": false,
+            "followOriginalHttpMethod": false,
+            "followAuthorizationHeader": false
+          },
+          "response": []
+        },
+        {
+          "name": "Fetch",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "http://127.0.0.1:18080/coverage/fetch?url=https:%2F%2Fwww.baidu.com",
+              "query": [
+                {
+                  "key": "url",
+                  "value": "https://www.baidu.com",
+                  "disabled": false,
+                  "description": null
+                }
+              ],
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "18080",
+              "path": [
+                "coverage",
+                "fetch"
+              ]
+            },
+            "description": "",
+            "header": [],
+            "body": null,
+            "auth": null
+          },
+          "protocolProfileBehavior": {
+            "followRedirects": false,
+            "followOriginalHttpMethod": false,
+            "followAuthorizationHeader": false
+          },
+          "response": []
+        }
+      ],
+      "protocolProfileBehavior": null,
+      "response": []
+    },
+    {
+      "name": "LightHouse",
+      "item": [
+        {
+          "name": "New",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "http://127.0.0.1:18080/lighthouse/new?url=https:%2F%2Fwww.baidu.com",
+              "query": [
+                {
+                  "key": "url",
+                  "value": "https://www.baidu.com",
+                  "disabled": false,
+                  "description": null
+                }
+              ],
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "18080",
+              "path": [
+                "lighthouse",
+                "new"
+              ]
+            },
+            "description": "",
+            "header": [],
+            "body": null,
+            "auth": null
+          },
+          "protocolProfileBehavior": {
+            "followRedirects": false,
+            "followOriginalHttpMethod": false,
+            "followAuthorizationHeader": false
+          },
+          "response": []
+        },
+        {
+          "name": "GET",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "http://127.0.0.1:18080/lighthouse/get?taskId=0ccf10f4-e8f2-4fdc-8fb1-40fd4d7806de",
+              "query": [
+                {
+                  "key": "taskId",
+                  "value": "0ccf10f4-e8f2-4fdc-8fb1-40fd4d7806de",
+                  "disabled": false,
+                  "description": null
+                }
+              ],
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "18080",
+              "path": [
+                "lighthouse",
+                "get"
+              ]
+            },
+            "description": "",
+            "header": [],
+            "body": null,
+            "auth": null
+          },
+          "protocolProfileBehavior": {
+            "followRedirects": false,
+            "followOriginalHttpMethod": false,
+            "followAuthorizationHeader": false
+          },
+          "response": []
+        },
+        {
+          "name": "Fetch",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "http://127.0.0.1:18080/lighthouse/fetch?url=https:%2F%2Fwww.baidu.com",
+              "query": [
+                {
+                  "key": "url",
+                  "value": "https://www.baidu.com",
+                  "disabled": false,
+                  "description": null
+                }
+              ],
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "18080",
+              "path": [
+                "lighthouse",
+                "fetch"
+              ]
+            },
+            "description": "",
+            "header": [],
+            "body": null,
+            "auth": null
+          },
+          "protocolProfileBehavior": {
+            "followRedirects": false,
+            "followOriginalHttpMethod": false,
+            "followAuthorizationHeader": false
+          },
+          "response": []
+        }
+      ],
+      "protocolProfileBehavior": null,
+      "response": []
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "editor.tabSize": 2,
+  "typescript.preferences.quoteStyle": "single",
+  "eslint.alwaysShowStatus": true,
+  "eslint.debug": true,
+  "eslint.format.enable": true
+}

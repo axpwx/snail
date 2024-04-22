@@ -1,0 +1,675 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "SnailAPI",
+    "version": "v0.0.0"
+  },
+  "host": "127.0.0.1:18080",
+  "schemes": [
+    "http"
+  ],
+  "basePath": "/",
+  "paths": {
+    "/ssr/new": {
+      "get": {
+        "summary": "New",
+        "description": "创建渲染任务",
+        "operationId": "75e3ef47-edb0-4bd8-bbfe-e5f2464d221e",
+        "parameters": [
+          {
+            "type": "string",
+            "default": "gzip, zlib, deflate, zstd, br",
+            "name": "Accept-Encoding",
+            "required": false,
+            "in": "header"
+          },
+          {
+            "type": "string",
+            "default": "https://httpbin.org/anything",
+            "name": "url",
+            "required": false,
+            "in": "query"
+          },
+          {
+            "type": "string",
+            "default": "pc",
+            "name": "device",
+            "required": false,
+            "in": "query"
+          },
+          {
+            "type": "string",
+            "default": "900,600,2",
+            "name": "viewport",
+            "required": false,
+            "in": "query"
+          },
+          {
+            "type": "string",
+            "default": "true",
+            "name": "hasLazy",
+            "required": false,
+            "in": "query"
+          },
+          {
+            "type": "string",
+            "default": "true",
+            "name": "extend",
+            "required": false,
+            "in": "query"
+          },
+          {
+            "type": "string",
+            "default": "Snail",
+            "name": "userAgent",
+            "required": false,
+            "in": "query"
+          },
+          {
+            "type": "string",
+            "default": "http://127.0.0.1/callback",
+            "name": "callback",
+            "required": false,
+            "in": "query"
+          },
+          {
+            "type": "string",
+            "default": "https://www.baidu.com",
+            "name": "referer",
+            "required": false,
+            "in": "query"
+          },
+          {
+            "type": "string",
+            "default": "5000",
+            "name": "timeout",
+            "required": false,
+            "in": "query"
+          },
+          {
+            "type": "string",
+            "default": "false",
+            "name": "direct",
+            "required": false,
+            "in": "query"
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "no response description was provided for this operation"
+          }
+        }
+      }
+    },
+    "/ssr/get": {
+      "get": {
+        "summary": "GET",
+        "description": "查询任务结果",
+        "operationId": "1d05fd8d-3ca0-47da-877f-ad29850ef9ee",
+        "parameters": [
+          {
+            "type": "string",
+            "default": "gzip, zlib, deflate, zstd, br",
+            "name": "Accept-Encoding",
+            "required": false,
+            "in": "header"
+          },
+          {
+            "type": "string",
+            "default": "f421abed-a43d-4b55-a66c-6d8993a4dffc",
+            "name": "taskId",
+            "required": false,
+            "in": "query"
+          },
+          {
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": ""
+            },
+            "in": "body",
+            "name": "body"
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "no response description was provided for this operation"
+          }
+        }
+      }
+    },
+    "/ssr/fetch": {
+      "get": {
+        "summary": "Fetch",
+        "description": "同步请求",
+        "operationId": "2c554c69-0605-48f8-882d-1ace511dc994",
+        "parameters": [
+          {
+            "type": "string",
+            "default": "gzip, zlib, deflate, zstd, br",
+            "name": "Accept-Encoding",
+            "required": false,
+            "in": "header"
+          },
+          {
+            "type": "string",
+            "default": "https://httpbin.org/anything",
+            "name": "url",
+            "required": false,
+            "in": "query"
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "no response description was provided for this operation"
+          }
+        }
+      }
+    },
+    "/screenshot/new": {
+      "get": {
+        "summary": "New",
+        "description": "",
+        "operationId": "2cb508a6-3655-4fe1-b84a-edf4ef528d3b",
+        "parameters": [
+          {
+            "type": "string",
+            "default": "gzip, zlib, deflate, zstd, br",
+            "name": "Accept-Encoding",
+            "required": false,
+            "in": "header"
+          },
+          {
+            "type": "string",
+            "default": "https://httpbin.org/anything",
+            "name": "url",
+            "required": false,
+            "in": "query"
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "no response description was provided for this operation"
+          }
+        }
+      }
+    },
+    "/screenshot/get": {
+      "get": {
+        "summary": "GET",
+        "description": "",
+        "operationId": "f4ab5a41-79e3-4a7c-99eb-a32c51e1dc4b",
+        "parameters": [
+          {
+            "type": "string",
+            "default": "gzip, zlib, deflate, zstd, br",
+            "name": "Accept-Encoding",
+            "required": false,
+            "in": "header"
+          },
+          {
+            "type": "string",
+            "default": "92eb738a-5bf4-4b01-a83f-66bb728a084f",
+            "name": "taskId",
+            "required": false,
+            "in": "query"
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "no response description was provided for this operation"
+          }
+        }
+      }
+    },
+    "/screenshot/fetch": {
+      "get": {
+        "summary": "Fetch",
+        "description": "",
+        "operationId": "d2ee9509-d37e-4501-a782-68e90302b58e",
+        "parameters": [
+          {
+            "type": "string",
+            "default": "gzip, zlib, deflate, zstd, br",
+            "name": "Accept-Encoding",
+            "required": false,
+            "in": "header"
+          },
+          {
+            "type": "string",
+            "default": "https://httpbin.org/anything",
+            "name": "url",
+            "required": false,
+            "in": "query"
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "no response description was provided for this operation"
+          }
+        }
+      }
+    },
+    "/pdf/new": {
+      "get": {
+        "summary": "New",
+        "description": "",
+        "operationId": "920df8fd-79a9-41bf-b621-75e6487441c7",
+        "parameters": [
+          {
+            "type": "string",
+            "default": "gzip, zlib, deflate, zstd, br",
+            "name": "Accept-Encoding",
+            "required": false,
+            "in": "header"
+          },
+          {
+            "type": "string",
+            "default": "https://httpbin.org/anything",
+            "name": "url",
+            "required": false,
+            "in": "query"
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "no response description was provided for this operation"
+          }
+        }
+      }
+    },
+    "/pdf/get": {
+      "get": {
+        "summary": "GET",
+        "description": "",
+        "operationId": "5402f573-8369-44e4-9bdf-e091d880df1c",
+        "parameters": [
+          {
+            "type": "string",
+            "default": "gzip, zlib, deflate, zstd, br",
+            "name": "Accept-Encoding",
+            "required": false,
+            "in": "header"
+          },
+          {
+            "type": "string",
+            "default": "576aa95a-7c8f-445d-972b-2ee3d75edd4d",
+            "name": "taskId",
+            "required": false,
+            "in": "query"
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "no response description was provided for this operation"
+          }
+        }
+      }
+    },
+    "/pdf/fetch": {
+      "get": {
+        "summary": "Fetch",
+        "description": "",
+        "operationId": "98aebbd4-7db0-42b5-8e57-0c1239ec0e5e",
+        "parameters": [
+          {
+            "type": "string",
+            "default": "gzip, zlib, deflate, zstd, br",
+            "name": "Accept-Encoding",
+            "required": false,
+            "in": "header"
+          },
+          {
+            "type": "string",
+            "default": "https://httpbin.org/anything",
+            "name": "url",
+            "required": false,
+            "in": "query"
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "no response description was provided for this operation"
+          }
+        }
+      }
+    },
+    "/reslist/new": {
+      "get": {
+        "summary": "New",
+        "description": "",
+        "operationId": "8f89856d-1e2c-48b5-a2dc-c4751c4e80dc",
+        "parameters": [
+          {
+            "type": "string",
+            "default": "gzip, zlib, deflate, zstd, br",
+            "name": "Accept-Encoding",
+            "required": false,
+            "in": "header"
+          },
+          {
+            "type": "string",
+            "default": "https://www.baidu.com",
+            "name": "url",
+            "required": false,
+            "in": "query"
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "no response description was provided for this operation"
+          }
+        }
+      }
+    },
+    "/reslist/get": {
+      "get": {
+        "summary": "GET",
+        "description": "",
+        "operationId": "30ab22d8-268c-481c-8995-190f2a4803f6",
+        "parameters": [
+          {
+            "type": "string",
+            "default": "gzip, zlib, deflate, zstd, br",
+            "name": "Accept-Encoding",
+            "required": false,
+            "in": "header"
+          },
+          {
+            "type": "string",
+            "default": "",
+            "name": "taskId",
+            "required": false,
+            "in": "query"
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "no response description was provided for this operation"
+          }
+        }
+      }
+    },
+    "/reslist/fetch": {
+      "get": {
+        "summary": "Fetch",
+        "description": "",
+        "operationId": "d516d270-faa2-4f0d-b36a-280544381528",
+        "parameters": [
+          {
+            "type": "string",
+            "default": "gzip, zlib, deflate, zstd, br",
+            "name": "Accept-Encoding",
+            "required": false,
+            "in": "header"
+          },
+          {
+            "type": "string",
+            "default": "https://www.baidu.com",
+            "name": "url",
+            "required": false,
+            "in": "query"
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "no response description was provided for this operation"
+          }
+        }
+      }
+    },
+    "/trace/new": {
+      "get": {
+        "summary": "New",
+        "description": "",
+        "operationId": "7b3a02b6-4b5e-4fd2-aa12-4ed7947318cf",
+        "parameters": [
+          {
+            "type": "string",
+            "default": "gzip, zlib, deflate, zstd, br",
+            "name": "Accept-Encoding",
+            "required": false,
+            "in": "header"
+          },
+          {
+            "type": "string",
+            "default": "https://www.baidu.com",
+            "name": "url",
+            "required": false,
+            "in": "query"
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "no response description was provided for this operation"
+          }
+        }
+      }
+    },
+    "/trace/get": {
+      "get": {
+        "summary": "GET",
+        "description": "",
+        "operationId": "877f62e0-a82b-4192-918f-c2ebae578ad9",
+        "parameters": [
+          {
+            "type": "string",
+            "default": "gzip, zlib, deflate, zstd, br",
+            "name": "Accept-Encoding",
+            "required": false,
+            "in": "header"
+          },
+          {
+            "type": "string",
+            "default": "89adfcf3-5a6b-4ef5-ae00-b419d713020d",
+            "name": "taskId",
+            "required": false,
+            "in": "query"
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "no response description was provided for this operation"
+          }
+        }
+      }
+    },
+    "/trace/fetch": {
+      "get": {
+        "summary": "Fetch",
+        "description": "",
+        "operationId": "8175ed0d-c929-418e-892a-cf6dfa4a4ef6",
+        "parameters": [
+          {
+            "type": "string",
+            "default": "gzip, zlib, deflate, zstd, br",
+            "name": "Accept-Encoding",
+            "required": false,
+            "in": "header"
+          },
+          {
+            "type": "string",
+            "default": "https://www.baidu.com",
+            "name": "url",
+            "required": false,
+            "in": "query"
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "no response description was provided for this operation"
+          }
+        }
+      }
+    },
+    "/coverage/new": {
+      "get": {
+        "summary": "New",
+        "description": "",
+        "operationId": "0d1e99cf-3486-4fbe-b816-147f135d88e0",
+        "parameters": [
+          {
+            "type": "string",
+            "default": "gzip, zlib, deflate, zstd, br",
+            "name": "Accept-Encoding",
+            "required": false,
+            "in": "header"
+          },
+          {
+            "type": "string",
+            "default": "https://www.baidu.com",
+            "name": "url",
+            "required": false,
+            "in": "query"
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "no response description was provided for this operation"
+          }
+        }
+      }
+    },
+    "/coverage/get": {
+      "get": {
+        "summary": "GET",
+        "description": "",
+        "operationId": "c0bc880c-6cdf-401b-b406-321e273052d4",
+        "parameters": [
+          {
+            "type": "string",
+            "default": "gzip, zlib, deflate, zstd, br",
+            "name": "Accept-Encoding",
+            "required": false,
+            "in": "header"
+          },
+          {
+            "type": "string",
+            "default": "68feb372-b5a0-4cfa-aeca-eccea1e1c04f",
+            "name": "taskId",
+            "required": false,
+            "in": "query"
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "no response description was provided for this operation"
+          }
+        }
+      }
+    },
+    "/coverage/fetch": {
+      "get": {
+        "summary": "Fetch",
+        "description": "",
+        "operationId": "047a5096-4e33-4e76-8c35-5c27a88d8ed3",
+        "parameters": [
+          {
+            "type": "string",
+            "default": "gzip, zlib, deflate, zstd, br",
+            "name": "Accept-Encoding",
+            "required": false,
+            "in": "header"
+          },
+          {
+            "type": "string",
+            "default": "https://www.baidu.com",
+            "name": "url",
+            "required": false,
+            "in": "query"
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "no response description was provided for this operation"
+          }
+        }
+      }
+    },
+    "/lighthouse/new": {
+      "get": {
+        "summary": "New",
+        "description": "",
+        "operationId": "79148ad7-20c6-458b-9338-0ddbb2b33f80",
+        "parameters": [
+          {
+            "type": "string",
+            "default": "gzip, zlib, deflate, zstd, br",
+            "name": "Accept-Encoding",
+            "required": false,
+            "in": "header"
+          },
+          {
+            "type": "string",
+            "default": "https://www.baidu.com",
+            "name": "url",
+            "required": false,
+            "in": "query"
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "no response description was provided for this operation"
+          }
+        }
+      }
+    },
+    "/lighthouse/get": {
+      "get": {
+        "summary": "GET",
+        "description": "",
+        "operationId": "5b0078e4-3352-46d1-99d1-5a8f50208dae",
+        "parameters": [
+          {
+            "type": "string",
+            "default": "gzip, zlib, deflate, zstd, br",
+            "name": "Accept-Encoding",
+            "required": false,
+            "in": "header"
+          },
+          {
+            "type": "string",
+            "default": "0ccf10f4-e8f2-4fdc-8fb1-40fd4d7806de",
+            "name": "taskId",
+            "required": false,
+            "in": "query"
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "no response description was provided for this operation"
+          }
+        }
+      }
+    },
+    "/lighthouse/fetch": {
+      "get": {
+        "summary": "Fetch",
+        "description": "",
+        "operationId": "7d34a2d6-3f79-4969-9a5d-5433cbe5134e",
+        "parameters": [
+          {
+            "type": "string",
+            "default": "gzip, zlib, deflate, zstd, br",
+            "name": "Accept-Encoding",
+            "required": false,
+            "in": "header"
+          },
+          {
+            "type": "string",
+            "default": "https://www.baidu.com",
+            "name": "url",
+            "required": false,
+            "in": "query"
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "no response description was provided for this operation"
+          }
+        }
+      }
+    }
+  },
+  "tags": []
+}
