@@ -40,7 +40,7 @@ ENV CONNECTION_TIMEOUT=30000 \
   REDIS_PORT="" \
   REDIS_PASS=""
 
-RUN npm config set registry https://registry.npm.taobao.org \
+RUN npm config set registry https://registry.npmmirror.com \
   && npm install yarn -g \
   && npm install pm2 -g \
   && npm install lighthouse -g

@@ -1,7 +1,7 @@
 # Snail
 一只可爱的蜗牛，实现了分布式Puppeteer服务，主要功能包含服务端渲染（SSR）、截图、打印PDF、资源提取、性能测试、代码覆盖率、前端监控、lighthouse评分等。
 
-![Snail架构图](https://github.com/axpwx/snail-private/raw/main/docs/architecture_diagram.png)
+![Snail架构图](https://github.com/axpwx/snail/raw/main/docs/architecture_diagram.png)
 
 ## 功能特性
 
@@ -27,7 +27,7 @@ yarn build
 
 ### Linux一键安装脚本
 ```shell
-curl -sSL https://raw.githubusercontent.com/axpwx/snail-private/master/install.sh | sudo bash
+curl -sSL https://raw.githubusercontent.com/axpwx/snail/master/install.sh | sudo bash
 ```
 
 ### Doker部署:

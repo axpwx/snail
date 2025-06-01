@@ -51,7 +51,7 @@ install_dependencies() {
 
   if ! type yarn > /dev/null 2>&1 || ! type pm2 > /dev/null 2>&1; then
     echo "Install yarn && pm2..."
-    npm config set registry https://registry.npm.taobao.org \
+    npm config set registry https://registry.npmmirror.com \
       && npm install yarn -g \
       && npm install pm2 -g
   fi
